@@ -1,0 +1,21 @@
+
+#logo {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  
+}
+
+#cloud {
+  position: absolute;
+  top: 100px;
+  opacity: 45%;
+}
+
+#divider {
+  background: url(/Assets/Images/divider.png) no-repeat center;
+  width: 100%;
+  height: 541px;
+  margin-top: 40%;
+}
