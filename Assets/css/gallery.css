@@ -1,0 +1,27 @@
+.gallery {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  padding: 10px;
+}
+
+.row img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.row img:hover {
+  opacity: 1;
+}
+
+
+
+
+

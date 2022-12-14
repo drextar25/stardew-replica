@@ -1,13 +1,12 @@
 .menuItems {
-  background-color: rgba(21, 71, 148, 0.8);
-  position:static;
-  width: 100%;
-  height: 55px;
+  display: flex;
+  background-color: var(--menuBackground);
+  justify-content: center;
 }
 
 .menuItems ul{
+ text-align: center;
   list-style-type: none;
-  text-align: center;
 }
 
 .menuItems ul li {
@@ -16,20 +15,26 @@
   margin: 0 20px;
 }
 
-.menuItems ul li.socialIcons {
-  margin-left: 140px;
-}
-
-.menuItems ul li.socialIcons a {
-  margin: 0px 5px 0px 5px;
-  font-size: 20px;
-}
-
 .menuItems ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: var(--white);
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
+
+.menuItems ul li.socialIcons {
+  padding-left: 80px;
+}
+
+.menuItems ul li.socialIcons a {
+  margin: 0px 5px 0px 5px;
+  font-size: 21px;
+}
+
+.menuItems ul li a:hover {
+  color:var(--yellow);
+}
+
+
