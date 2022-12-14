@@ -7,14 +7,13 @@
 
 .foot-icons li {
   padding: 20px;
-
 }
 
 #rating li img {
   max-height: 4em;
 }
 
-#rating li{
+#rating li {
   opacity: 0.5;
 }
 
@@ -35,13 +34,13 @@
   font-weight: bold;
   line-height: 1.5em;
   text-align: left;
-  padding:0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
 }
 
 .footer-info p {
   font-weight: 400;
 }
-.footer-info a{
+.footer-info a {
   text-decoration: none;
   color: var(--heading);
   padding: 0px 15px 0px 15px;
@@ -50,6 +49,3 @@
 .footer-info a:hover {
   color: var(--menuBackground);
 }
-
-
-

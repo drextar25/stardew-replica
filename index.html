@@ -7,21 +7,21 @@
 
     <link
       rel="shortcut icon"
-      href="/assets/Images/favicon.png"
+      href="./assets/images/favicon.png"
       type="image/x-icon"
     />
 
     <title>Stardew Valley</title>
 
-    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
     <link rel="stylesheet" href="./assets/css/body.css" />
-    <link rel="stylesheet" href="./assets/css/mainlogo.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/main-logo.css" />
     <link rel="stylesheet" href="./assets/css/content.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/gallery.css">
-    <link rel="stylesheet" href="./assets/css/color.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    
+    <link rel="stylesheet" href="./assets/css/gallery.css" />
+    <link rel="stylesheet" href="./assets/css/color.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
 
     <link
       rel="stylesheet"
@@ -36,10 +36,8 @@
     />
   </head>
   <body>
-
     <header>
-      <nav class="menuItems">
-
+      <nav class="menu-items">
         <ul>
           <li>
             <a href="#">home</a>
@@ -73,8 +71,7 @@
             <a href="#">tabletop</a>
           </li>
 
-          <li class="socialIcons">
-
+          <li class="social-icons">
             <a href="#">
               <i class="fa fa-twitter"></i>
             </a>
@@ -90,215 +87,271 @@
             <a href="#">
               <i class="fa fa-envelope"></i>
             </a>
-
           </li>
-
         </ul>
-
       </nav>
     </header>
 
-    <div class="mainLogo">
-        <img src="./assets/images/mainlogo.png" alt="Stardew Valley Logo" />
+    <div class="main-logo">
+      <img src="./assets/images/mainlogo.png" alt="Stardew Valley Logo" />
     </div>
 
-    <div id="divider">
-    </div>
+    <div id="divider"></div>
 
     <main>
-      <p>
-      <span class="heading">You're moving to the Valley...</span>
-      <br />
-      <br />
+      <div class="heading">
+        <p class="title">You're moving to the Valley...</p>
+
         <p class="text-area">
           You've inherited your grandfather's old farm plot in
-          <span id="highlight">Stardew Valley</span>.
-          <br />
-          Armed with hand-me-down tools and a few coins, you set out to begin your
-          new life!
+          <span class="highlight">Stardew Valley</span>.<br />
+          Armed with hand-me-down tools and a few coins, you set out to begin
+          your new life!
         </p>
-      </p>
-    <br>
-    <hr>
-    <br>
 
-    <section class="gallery">
-      <div class="column">
-
-        <div class="row">
-          <img src="./assets/images/galleryphoto1.png" alt="A screenshot of a house and garden" onclick="myFunction(this);">
-        </div>
-
-        <div class="row">
-          <img src="./assets/images/galleryphoto2.png" alt="A screenshot of a dock with boats at night" onclick="myFunction(this);">
-        </div>
-
-        <div class="row">
-          <img src="./assets/images/galleryphoto3.png" alt="A screenshot two houses, a garden, and people" onclick="myFunction(this);">
-        </div>
-
-        <div class="row">
-          <img src="./assets/images/galleryphoto4.png" alt="A screenshot of a person in a tunnel" onclick="myFunction(this);">
-        </div>
-
+        <hr />
       </div>
 
-      <div>
-        <img id="expandedImg" src="./assets/images/galleryphoto1.png" alt="A screenshot of a house and garden">
-      </div>
+      <section class="gallery">
+        <div class="column">
+          <div class="row">
+            <img
+              src="./assets/images/galleryphoto1.png"
+              alt="A screenshot of a house and garden"
+              onclick="setNewGalleryImage(this);"
+            />
+          </div>
 
-    </section>
+          <div class="row">
+            <img
+              src="./assets/images/galleryphoto2.png"
+              alt="A screenshot of a dock with boats at night"
+              onclick="setNewGalleryImage(this);"
+            />
+          </div>
 
-    <br>
-    <hr>
-    <br>
+          <div class="row">
+            <img
+              src="./assets/images/galleryphoto3.png"
+              alt="A screenshot two houses, a garden, and people"
+              onclick="setNewGalleryImage(this);"
+            />
+          </div>
 
-    <p>
-        <span class="heading">Features</span>
-        <br />
-        <br />
+          <div class="row">
+            <img
+              src="./assets/images/galleryphoto4.png"
+              alt="A screenshot of a person in a tunnel"
+              onclick="setNewGalleryImage(this);"
+            />
+          </div>
+        </div>
+
+        <div>
+          <img
+            id="expandedImg"
+            src="./assets/images/galleryphoto1.png"
+            alt="A screenshot of a house and garden"
+          />
+        </div>
+      </section>
+
+      <hr />
+
+      <div class="features">
+        <p><span class="heading">Features</span></p>
+
         <ul class="list">
           <li>
-            <span id="highlight">Create the farm of your dreams:</span> Turn your overgrown fields into a lively and bountiful farm!
+            <span class="highlight">Create the farm of your dreams:</span> Turn
+            your overgrown fields into a lively and bountiful farm!
           </li>
+
           <li>
-            <span id="highlight">Learn to live off the land:</span> Raise animals, go fishing, tend to crops, craft items, or do it all! The choice is yours...
+            <span class="highlight">Learn to live off the land:</span> Raise
+            animals, go fishing, tend to crops, craft items, or do it all! The
+            choice is yours...
           </li>
+
           <li>
-            <span id="highlight">Become a part of the local community: </span> Pelican Town is home to over 30 residents you can befriend!
+            <span class="highlight">
+              Become a part of the local community:
+            </span>
+            Pelican Town is home to over 30 residents you can befriend!
           </li>
+
           <li>
-            <span id="highlight">Meet someone special:</span> With 12 townsfolk to date, you may even find someone to start a family with!
+            <span class="highlight">Meet someone special:</span> With 12
+            townsfolk to date, you may even find someone to start a family with!
           </li>
+
           <li>
-            <span id="highlight">Explore vast, mysterious caves:</span> Encounter dangerous monsters & valuable treasures deep underground!
+            <span class="highlight">Explore vast, mysterious caves:</span>
+            Encounter dangerous monsters & valuable treasures deep underground!
           </li>
+
           <li>
-            <span id="highlight">Customize:</span> There are hundreds of character & home decoration options to choose from!
+            <span class="highlight">Customize:</span> There are hundreds of
+            character & home decoration options to choose from!
           </li>
         </ul>
-      </p>
-      <br>
-      <hr>
-    
+      </div>
 
-    <footer class="foot-icons">
+      <hr />
 
-      <ul>
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/STEAM_logo.png" alt="Steam logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/HUMBLESTORE_logo.png" alt="Humble Store logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/GOG_logo.png" alt="GOG logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/XBOXOne_logo.png" alt="Xbox One logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/PS4_logo.png" alt="PS4 logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/NintendoSwitch_logo.png" alt="Nintendo Switch Logo">
-          </a>
-        </li>
-      </ul>
-
-      <ul>
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/iOS_logo.png" alt="IOS Logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/android_logo.png" alt="Android Logo">
-          </a>
-        </li>
-      </ul>
-
-      <ul id="rating">
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/PEGI.png" alt="PEGI Logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/ACB_Rating_PG.png" alt="ABC Rating Logo">
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <img src="./assets/images/footer-icons/USK_6.png" alt="USK 6 Logo">
-          </a>
-        </li>
-
-        <li class="esrb-rating">
-          <div>
+      <footer class="foot-icons">
+        <ul>
+          <li>
             <a href="#">
-            <img src="./assets/images/footer-icons/ESRB_Rating.png" alt="ESRB Rating Logo">
+              <img
+                src="./assets/images/footer-icons/steam-logo.png"
+                alt="Steam logo"
+              />
             </a>
-          </div>
-        
-          <div class="esrb-desc">
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/humblestore-logo.png"
+                alt="Humble Store logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/gog-logo.png"
+                alt="GOG logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/xbox-one-logo.png"
+                alt="Xbox One logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/ps4-logo.png"
+                alt="PS4 logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/nintendo-switch-logo.png"
+                alt="Nintendo Switch Logo"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/ios-logo.png"
+                alt="IOS Logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/android-logo.png"
+                alt="Android Logo"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <ul id="rating">
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/pegi.png"
+                alt="PEGI Logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/acb-rating-pg.png"
+                alt="ABC Rating Logo"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="./assets/images/footer-icons/usk-6.png"
+                alt="USK 6 Logo"
+              />
+            </a>
+          </li>
+
+          <li class="esrb-rating">
+            <div>
+              <a href="#">
+                <img
+                  src="./assets/images/footer-icons/esrb-rating.png"
+                  alt="ESRB Rating Logo"
+                />
+              </a>
+            </div>
+
+            <div class="esrb-desc">
               <p>Fantasy Violence</p>
               <p>Mild Blood</p>
               <p>Mild Language</p>
               <p>Simulated Gambling</p>
               <p>Use of Alcohol and Tobacco</p>
-          </div>
-        </li>
+            </div>
+          </li>
+        </ul>
 
-      </ul>
         <ul>
           <li>
             <a href="#">
-              <img src="./assets/images/footer-icons/ca_logo.png" alt="Concerned Ape Logo">
+              <img
+                src="./assets/images/footer-icons/ca-logo.png"
+                alt="Concerned Ape Logo"
+              />
             </a>
           </li>
         </ul>
 
-      <div class="footer-info">
-        <p>
-          Stardew Valley Copyright © 2016-2022 ConcernedApe LLC
-        </p>
-        <br>
-        <p>
-          The term “Grange” is a registered trademark of the National Grange of the Order of Patrons of Husbandry.
-        </p>
-        <br>
-        <p>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of use</a>
-        </p>
+        <div class="footer-info">
+          <p>Stardew Valley Copyright © 2016-2022 ConcernedApe LLC</p>
 
-      </div>
+          <p>
+            The term “Grange” is a registered trademark of the National Grange
+            of the Order of Patrons of Husbandry.
+          </p>
 
-    </footer>
+          <div>
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms of use</a>
+          </div>
+        </div>
+      </footer>
     </main>
-
   </body>
-  <script src="./script.js"></script>
+
+  <script src="./assets/js/script.js"></script>
 </html>

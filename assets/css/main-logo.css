@@ -1,4 +1,4 @@
-.mainLogo {
+.main-logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 #divider {
-  background: url(../../Assets/Images/divider.png) center;
+  background: url("../../assets/images/divider.png") center;
   height: 541px;
   width: 100%;
   margin-top: 200px;

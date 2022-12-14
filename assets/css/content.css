@@ -1,0 +1,27 @@
+.heading .title {
+  color: var(--heading);
+  font-size: 45px;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.highlight {
+  color: var(--highlight);
+  font-weight: 800;
+}
+
+.heading {
+  padding: 30px 0;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading-block hr {
+  margin-top: 30px;
+}
+
+.features {
+  padding: 30px 0;
+}

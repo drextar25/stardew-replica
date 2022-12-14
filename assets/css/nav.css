@@ -1,40 +1,38 @@
-.menuItems {
+.menu-items {
   display: flex;
   background-color: var(--menuBackground);
   justify-content: center;
 }
 
-.menuItems ul{
- text-align: center;
+.menu-items ul {
+  text-align: center;
   list-style-type: none;
 }
 
-.menuItems ul li {
+.menu-items ul li {
   line-height: 55px;
   display: inline-block;
   margin: 0 20px;
 }
 
-.menuItems ul li a {
+.menu-items ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--white);
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
 
-.menuItems ul li.socialIcons {
+.menu-items ul li.social-icons {
   padding-left: 80px;
 }
 
-.menuItems ul li.socialIcons a {
+.menu-items ul li.social-icons a {
   margin: 0px 5px 0px 5px;
   font-size: 21px;
 }
 
-.menuItems ul li a:hover {
-  color:var(--yellow);
+.menu-items ul li a:hover {
+  color: var(--yellow);
 }
-
-
